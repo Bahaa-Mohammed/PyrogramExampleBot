@@ -23,6 +23,11 @@ Heya I'm Alive :)""",
                 [InlineKeyboardButton(
                         "Follow On Github", url="https://github.com/Achu2234")]]))
 
+@Client.on_message(filters.command(["start", "start@Pyro_Tg_Bot"]))
+async def start(_, message: Message):
+    await message.reply_text(
+        f"""<b>Hi {message.from_user.first_name} 😉️!</b>
+Heya I'm Alive :)""",
 
 
 # So now let's make private only command
