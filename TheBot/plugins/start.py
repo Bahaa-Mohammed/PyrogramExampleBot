@@ -27,7 +27,7 @@ Heya I'm Alive :)""",
 async def start(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name} 😉️!</b>
-Heya I'm Alive :)"""
+Heya I'm Alive :)""")
 
 
 # So now let's make private only command
