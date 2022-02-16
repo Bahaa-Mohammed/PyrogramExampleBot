@@ -14,12 +14,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 async def start(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name} 😉️!</b>
-
-Heya I'm Alive :)
-
-Made by **@Amalbiju154** for Noob/Beginners Like Him!
-
-Join **@Animemusicarchive6**""",
+Heya I'm Alive :)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
