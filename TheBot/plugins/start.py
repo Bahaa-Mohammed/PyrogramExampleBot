@@ -23,19 +23,6 @@ Heya I'm Alive :)""",
                 [InlineKeyboardButton(
                         "Follow On Github", url="https://github.com/Achu2234")]]))
 
-@Client.on_message(filters.command(["love", "love@Pyro_Tg_Bot"]))
-async def start(_, message: Message):
-    await message.reply_text(
-        f"""<b>Hi {message.from_user.first_name} 😉️!</b>
-Heya I'm Alive :)""",
-        reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
-                        "🔰️ My Updates Channel 🔰️", url="https://t.me/Animemusicarchive6"),
-                    InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Yeageristbots")],
-                [InlineKeyboardButton(
-                        "Follow On Github", url="https://github.com/Achu2234")]]))
-
 
 
 # So now let's make private only command
