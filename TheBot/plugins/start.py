@@ -15,24 +15,13 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name} 😉️!</b>
 Heya I'm Alive :)""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
+        reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
-                        "🔰️ My Updates Channel 🔰️", url="https://t.me/Animemusicarchive6"
-                    ),
+                        "🔰️ My Updates Channel 🔰️", url="https://t.me/Animemusicarchive6"),
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Yeageristbots"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "Follow On Github", url="https://github.com/Achu2234"
-                    )
-                ]
-            ]
-        )
-    )
+                        "⚜️ Support Group ⚜️", url="https://t.me/Yeageristbots")],
+                [InlineKeyboardButton(
+                        "Follow On Github", url="https://github.com/Achu2234")]]))
 
 
 # So now let's make private only command
@@ -42,18 +31,6 @@ async def repo(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name} 😉️!</b>
 
-Kk Click On The Below Button For The Repo :)
-
-Made by **@Amalbiju154** for Noob/Beginners Like Him!
-
-Join **@NexaBotsUpdates**""",
+Kk Click On The Below Button For The Repo :)""",
         reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Repo", url=""
-                    )
-                ]
-            ]
-        )
-    )
+            [[InlineKeyboardButton("Repo", url="")]]))
